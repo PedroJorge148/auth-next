@@ -20,6 +20,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { CardWrapper } from "@/components/auth/card-wrapper";
 import { login } from "@/actions/login";
 import { useState, useTransition } from "react";
+import { register } from "@/actions/register";
 
 export function RegisterForm() {
   const [error, setError] = useState<string | undefined>('')
@@ -40,7 +41,7 @@ export function RegisterForm() {
     setSuccess('')
 
     startTransition(() => {
-      login(values)
+      register(values)
       .then((data) => {
         setError(data.error)
         setSuccess(data.success)
@@ -116,7 +117,7 @@ export function RegisterForm() {
           <FormError message={error} />
           <FormSuccess message={success} />
           <Button type="submit" disabled={pending} className="w-full">
-            Login
+            Create an account
           </Button>
         </form>
       </Form>
