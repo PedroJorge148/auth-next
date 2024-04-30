@@ -21,7 +21,6 @@ import { CardWrapper } from "@/components/auth/card-wrapper";
 import { login } from "@/actions/login";
 import { useState, useTransition } from "react";
 
-
 export function LoginForm() {
   const [error, setError] = useState<string | undefined>('')
   const [success, setSuccess] = useState<string | undefined>('')
@@ -42,8 +41,8 @@ export function LoginForm() {
     startTransition(() => {
       login(values)
       .then((data) => {
-        setError(data.error)
-        setSuccess(data.success)
+        setError(data?.error)
+        // setSuccess(data?.success)
       })
     })
   }
