@@ -1,6 +1,9 @@
 'use server'
 
 import { signIn } from "@/auth"
+import { generateVerificaitonToken } from "@/data/tokens"
+import { getUserByEmail } from "@/data/user"
+import { sendVerificationEmail } from "@/lib/mail"
 import { DEFAULT_LOGIN_REDIRECT } from "@/routes"
 import { LoginSchema, loginSchema } from "@/schemas"
 import { AuthError } from "next-auth"
@@ -13,6 +16,22 @@ export async function login(values: LoginSchema) {
   }
 
   const { email, password } = validatedFields.data
+
+  const existingUser = await getUserByEmail(email)
+
+  if (!existingUser || !existingUser.email) {
+    return { error: 'Email does not exists!' }
+  }
+
+  if (!existingUser.emailVerified) {
+    const verificationToken = await generateVerificaitonToken(
+      existingUser.email
+    )
+
+    await sendVerificationEmail(verificationToken.email, verificationToken.token)
+
+    return { success: 'Confimation email sent!'}
+  }
 
   try {
     await signIn('credentials', {
