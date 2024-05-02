@@ -1,9 +1,10 @@
 'use client'
 
-import { z } from "zod";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
-import { useForm } from "react-hook-form";
+import { Input } from "../ui/input"
+import { Button } from "../ui/button"
+import { useForm } from "react-hook-form"
+import { useState, useTransition } from "react"
+import { useSearchParams } from "next/navigation"
 
 import {
   Form,
@@ -13,15 +14,19 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
-import { LoginSchema, loginSchema } from "@/schemas";
-import { FormError } from "@/components/form-error";
-import { FormSuccess } from "@/components/form-success";
+import { LoginSchema, loginSchema } from "@/schemas"
+import { FormError } from "@/components/form-error"
+import { FormSuccess } from "@/components/form-success"
 import { zodResolver } from '@hookform/resolvers/zod'
-import { CardWrapper } from "@/components/auth/card-wrapper";
-import { login } from "@/actions/login";
-import { useState, useTransition } from "react";
+import { CardWrapper } from "@/components/auth/card-wrapper"
+import { login } from "@/actions/login"
 
 export function LoginForm() {
+  const searchParams = useSearchParams()
+  const urlError = searchParams.get('error') === 'OAuthAccountNotLinked'
+    ? 'Email already in use with different provider!'
+    : ''
+
   const [error, setError] = useState<string | undefined>('')
   const [success, setSuccess] = useState<string | undefined>('')
   const [pending, startTransition] = useTransition()
@@ -42,6 +47,7 @@ export function LoginForm() {
       login(values)
       .then((data) => {
         setError(data?.error)
+        // TODO: Add when we add 2FA
         // setSuccess(data?.success)
       })
     })
@@ -94,7 +100,7 @@ export function LoginForm() {
               )}
             />
           </div>
-          <FormError message={error} />
+          <FormError message={error || urlError} />
           <FormSuccess message={success} />
           <Button type="submit" disabled={pending} className="w-full">
             Login
