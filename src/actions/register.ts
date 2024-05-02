@@ -4,7 +4,7 @@ import { hash } from 'bcryptjs'
 import { db } from "@/lib/prisma"
 import { getUserByEmail } from "@/data/user"
 import { sendVerificationEmail } from "@/lib/mail"
-import { generateVerificaitonToken } from "@/data/tokens"
+import { generateVerificationToken } from "@/data/tokens"
 import { registerSchema, RegisterSchema } from "@/schemas"
 
 export async function register(values: RegisterSchema) {
@@ -31,7 +31,7 @@ export async function register(values: RegisterSchema) {
     }
   })
 
-  const verificationToken = await generateVerificaitonToken(email)
+  const verificationToken = await generateVerificationToken(email)
   await sendVerificationEmail(verificationToken.email, verificationToken.token)
 
   return { success: 'Confirmation email sent!' }

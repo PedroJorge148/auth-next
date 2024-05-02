@@ -1,7 +1,7 @@
 'use server'
 
 import { signIn } from "@/auth"
-import { generateVerificaitonToken } from "@/data/tokens"
+import { generateVerificationToken } from "@/data/tokens"
 import { getUserByEmail } from "@/data/user"
 import { sendVerificationEmail } from "@/lib/mail"
 import { DEFAULT_LOGIN_REDIRECT } from "@/routes"
@@ -24,7 +24,7 @@ export async function login(values: LoginSchema) {
   }
 
   if (!existingUser.emailVerified) {
-    const verificationToken = await generateVerificaitonToken(
+    const verificationToken = await generateVerificationToken(
       existingUser.email
     )
 
