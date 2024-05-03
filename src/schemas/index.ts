@@ -9,7 +9,7 @@ export type LoginSchema = z.infer<typeof loginSchema>
 
 export const registerSchema = z.object({
   email: z.string().email('Email is required'),
-  password: z.string().min(6, 'Mininum 6 characters required'),
+  password: z.string().min(6, 'Mininum of 6 characters required'),
   name: z.string().min(1, 'Name is required')
 })
 
@@ -20,3 +20,9 @@ export const resetSchema = z.object({
 })
 
 export type ResetSchema = z.infer<typeof resetSchema>
+
+export const newPasswordSchema = z.object({
+  password: z.string().min(6, 'Mininum of 6 characters required'),
+})
+
+export type NewPasswordSchema = z.infer<typeof newPasswordSchema>
