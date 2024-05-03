@@ -36,7 +36,7 @@ export function RegisterForm() {
     }
   })
 
-  function onLoginSubmit(values: RegisterSchema) {
+  function onRegisterSubmit(values: RegisterSchema) {
     setError('')
     setSuccess('')
 
@@ -57,7 +57,7 @@ export function RegisterForm() {
       showSocial 
     >
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onLoginSubmit)} className="space-y-6">
+        <form onSubmit={form.handleSubmit(onRegisterSubmit)} className="space-y-6">
           <div className="space-y-4">
           <FormField 
               control={form.control}
