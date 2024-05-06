@@ -1,5 +1,36 @@
 import { z } from 'zod'
 
+export const settingsSchema = z.object({
+  name: z.string().optional(),
+  isTwoFactorEnabled: z.boolean().optional(),
+  role: z.enum(['ADMIN', 'USER']),
+  email: z.string().email().optional(),
+  password: z.string().min(6).optional(),
+  newPassword: z.string().min(6).optional(),
+})
+  .refine((data) => {
+    if (data.password && !data.newPassword) {
+      return false
+    }
+
+    return true
+  }, {
+    message: 'New password is required!',
+    path: ['newPassword']
+  })
+  .refine((data) => {
+    if (data.newPassword && !data.password) {
+      return false
+    }
+
+    return true
+  }, {
+    message: 'Password is required!',
+    path: ['password']
+  })
+
+export type SettingsSchema = z.infer<typeof settingsSchema>
+
 export const loginSchema = z.object({
   email: z.string().email('Email is required'),
   password: z.string().min(1, 'Password is required'),
