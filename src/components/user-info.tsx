@@ -13,7 +13,7 @@ export function UserInfo({ label, user }: UserInfoProps) {
     <Card className="w-[600px] shadow-md">
       <CardHeader>
         <p className="text-2xl font-semibold text-center">
-          {label}
+          🖥 {label}
         </p>
       </CardHeader>
       <CardContent className="space-y-4">
