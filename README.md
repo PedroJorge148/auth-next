@@ -324,7 +324,7 @@ RESEND_API_KEY=re_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## :wrench: Stats
 
-[![Stats for Next](/.github/images/stats.svg "Stats for Next")](https://pagespeed-insights-svg.glitch.me/?url=https://nextoauth.netlify.app "Stats for Next")
+[![Stats for Next](/.github/stats.svg "Stats for Next")](https://pagespeed-insights-svg.glitch.me/?url=https://auth-next-sooty.vercel.app/ "Stats for Next")
 
 
 ## :raised_hands: Contribute
