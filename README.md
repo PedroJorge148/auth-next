@@ -308,7 +308,7 @@ RESEND_API_KEY=re_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 1. Now app is fully configured 👍 and you can start using this app using `npm run dev` or `yarn dev`.
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly. <br />
-**❗ WARN:** Resend will only works with the email registered.
+**❗ WARN:** Resend will only works with the email registered. 
 
 ## :camera: Screenshots:
 
@@ -324,68 +324,18 @@ RESEND_API_KEY=re_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## :wrench: Stats
 
-[![Stats for Next](/.github/images/stats.svg "Stats for Next")](https://pagespeed-insights-svg.glitch.me/?url=https://nextoauth.netlify.app/ "Stats for Next")
+[![Stats for Next](/.github/images/stats.svg "Stats for Next")](https://pagespeed-insights-svg.glitch.me/?url=https://nextoauth.netlify.app "Stats for Next")
+
 
 ## :raised_hands: Contribute
 
 You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
 
-## :gem: Acknowledgements
-
-Useful resources and dependencies that are used in Next.
-
-- **[@prisma/client](https://www.npmjs.com/package/@prisma/client)**: ^5.7.0
-- **[@auth/prisma-adapter](https://www.npmjs.com/package/@auth/prisma-adapter)**: ^1.0.12
-- **[@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)**: ^3.3.3
-- **[@radix-ui/react-avatar](https://www.npmjs.com/package/@radix-ui/react-avatar)**: ^1.0.4
-- **[@radix-ui/react-dialog](https://www.npmjs.com/package/@radix-ui/react-dialog)**: ^1.0.5
-- **[@radix-ui/react-dropdown-menu](https://www.npmjs.com/package/@radix-ui/react-dropdown-menu)**: ^2.0.6
-- **[@radix-ui/react-icons](https://www.npmjs.com/package/@radix-ui/react-icons)**: ^1.3.0
-- **[@radix-ui/react-label](https://www.npmjs.com/package/@radix-ui/react-label)**: ^2.0.2
-- **[@radix-ui/react-select](https://www.npmjs.com/package/@radix-ui/react-select)**: ^2.0.0
-- **[@radix-ui/react-slot](https://www.npmjs.com/package/@radix-ui/react-slot)**: ^1.0.2
-- **[@radix-ui/react-switch](https://www.npmjs.com/package/@radix-ui/react-switch)**: ^1.0.3
-- **[bcrypt](https://www.npmjs.com/package/bcrypt)**: ^5.1.1
-- **[bcryptjs](https://www.npmjs.com/package/bcryptjs)**: ^2.4.3
-- **[class-variance-authority](https://www.npmjs.com/package/class-variance-authority)**: ^0.7.0
-- **[clsx](https://www.npmjs.com/package/clsx)**: ^2.1.0
-- **[next](https://www.npmjs.com/package/next)**: 14.0.4
-- **[auth-next](https://www.npmjs.com/package/auth-next)**: ^5.0.0-beta.4
-- **[next-themes](https://www.npmjs.com/package/next-themes)**: ^0.2.1
-- **[react](https://www.npmjs.com/package/react)**: ^18
-- **[react-dom](https://www.npmjs.com/package/react-dom)**: ^18
-- **[react-hook-form](https://www.npmjs.com/package/react-hook-form)**: ^7.49.2
-- **[react-icons](https://www.npmjs.com/package/react-icons)**: ^4.12.0
-- **[react-spinners](https://www.npmjs.com/package/react-spinners)**: ^0.13.8
-- **[resend](https://www.npmjs.com/package/resend)**: ^2.1.0
-- **[sonner](https://www.npmjs.com/package/sonner)**: ^1.3.1
-- **[tailwind-merge](https://www.npmjs.com/package/tailwind-merge)**: ^2.2.0
-- **[tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate)**: ^1.0.7
-- **[uuid](https://www.npmjs.com/package/uuid)**: ^9.0.1
-- **[zod](https://www.npmjs.com/package/zod)**: ^3.22.4
-- **[@types/bcrypt](https://www.npmjs.com/package/@types/bcrypt)**: ^5.0.2
-- **[@types/bcryptjs](https://www.npmjs.com/package/@types/bcryptjs)**: ^2.4.6
-- **[@types/node](https://www.npmjs.com/package/@types/node)**: ^20
-- **[@types/react](https://www.npmjs.com/package/@types/react)**: ^18
-- **[@types/react-dom](https://www.npmjs.com/package/@types/react-dom)**: ^18
-- **[@types/uuid](https://www.npmjs.com/package/@types/uuid)**: ^9.0.7
-- **[autoprefixer](https://www.npmjs.com/package/autoprefixer)**: ^10.0.1
-- **[eslint](https://www.npmjs.com/package/eslint)**: ^8
-- **[eslint-config-next](https://www.npmjs.com/package/eslint-config-next)**: 14.0.4
-- **[postcss](https://www.npmjs.com/package/postcss)**: ^8
-- **[prisma](https://www.npmjs.com/package/prisma)**: ^5.7.1
-- **[tailwindcss](https://www.npmjs.com/package/tailwindcss)**: ^3.3.0
-- **[typescript](https://www.npmjs.com/package/typescript)**: ^5
-
-## :coffee: Buy Me a Coffee
-
-[<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" width="200" />](https://www.buymeacoffee.com/sanidhy "Buy me a Coffee")
-
 ## :rocket: Follow Me
 
 [![GitHub followers](https://img.shields.io/github/followers/pedrojorge148?style=social&label=Follow&maxAge=2592000)](https://github.com/pedrojorge148 "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fpedrojorge148%2Fauth-next "Tweet")
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCNAz_hUVBG2ZUN8TVm0bmYw "Subscribe my Channel")
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pedrojorge258/)](https://www.linkedin.com/in/pedrojorge258/) 
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-purple?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/pedrojrg_)](https://www.instagram.com/pedrojrg_/)
 
 ## :books: Learn More
 
