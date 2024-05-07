@@ -36,7 +36,7 @@
 
 </details>
 
-## 📁 Folder Structure
+## :file_folder: Folder Structure
 <details>
  
 <summary>Here is the folder structure of this app.</summary>
