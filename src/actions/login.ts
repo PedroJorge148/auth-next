@@ -17,7 +17,10 @@ import { getTwoFactorTokenByEmail } from "@/data/two-factor-token"
 import { db } from "@/lib/prisma"
 import { getTwoFactorConfirmationByUserId } from "@/data/two-factor-confirmation"
 
-export async function login(values: LoginSchema) {
+export async function login(
+  values: LoginSchema,
+  callbackUrl?: string | null
+) {
   const validatedFields = loginSchema.safeParse(values)
 
   if (!validatedFields.success) {
@@ -95,11 +98,13 @@ export async function login(values: LoginSchema) {
     }
   }
 
+  console.log(callbackUrl)
+
   try {
     await signIn('credentials', {
       email,
       password,
-      redirectTo: DEFAULT_LOGIN_REDIRECT,
+      redirectTo: callbackUrl || DEFAULT_LOGIN_REDIRECT,
     })
   } catch (error) {
     if (error instanceof AuthError) {
