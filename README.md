@@ -18,7 +18,7 @@
 
 <summary>
 
-# 📔 Table of Contents
+# :notebook_with_decorative_cover: Table of Contents
 
 </summary>
 
@@ -36,7 +36,7 @@
 
 </details>
 
-## 📁 Folder Structure
+## :bangbang: Folder Structure
 <details>
  
 <summary>Here is the folder structure of this app.</summary>
