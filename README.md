@@ -22,7 +22,7 @@
 
 </summary>
 
-- [Folder Structure](#bangbang-folder-structure)
+- [Folder Structure](#file_folder-folder-structure)
 - [Getting Started](#toolbox-getting-started)
 - [Screenshots](#camera-screenshots)
 - [Tech Stack](#gear-tech-stack)
@@ -36,7 +36,7 @@
 
 </details>
 
-## :bangbang: Folder Structure
+## 📁 Folder Structure
 <details>
  
 <summary>Here is the folder structure of this app.</summary>
