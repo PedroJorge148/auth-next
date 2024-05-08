@@ -22,24 +22,21 @@
 
 </summary>
 
-- [Folder Structure](#bangbang-folder-structure)
+- [Folder Structure](#file_folder-folder-structure)
 - [Getting Started](#toolbox-getting-started)
 - [Screenshots](#camera-screenshots)
 - [Tech Stack](#gear-tech-stack)
 - [Stats](#wrench-stats)
 - [Contribute](#raised_hands-contribute)
-- [Acknowledgements](#gem-acknowledgements)
-- [Buy Me a Coffee](#coffee-buy-me-a-coffee)
 - [Follow Me](#rocket-follow-me)
 - [Learn More](#books-learn-more)
 - [Deploy on Vercel](#page_with_curl-deploy-on-vercel)
 - [Give A Star](#star-give-a-star)
 - [Star History](#star2-star-history)
-- [Give A Star](#star-give-a-star)
 
 </details>
 
-## :bangbang: Folder Structure
+## :file_folder: Folder Structure
 <details>
  
 <summary>Here is the folder structure of this app.</summary>
@@ -324,7 +321,7 @@ RESEND_API_KEY=re_XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## :wrench: Stats
 
-[![Stats for Next](/.github/images/stats.svg "Stats for Next")](https://pagespeed-insights-svg.glitch.me/?url=https://nextoauth.netlify.app "Stats for Next")
+[![Stats for Next](/.github/stats.svg "Stats for Next")](https://pagespeed-insights-svg.glitch.me/?url=https://auth-next-sooty.vercel.app/ "Stats for Next")
 
 
 ## :raised_hands: Contribute
