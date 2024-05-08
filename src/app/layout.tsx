@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: '%s | Auth Next',
     default: 'Auth Next',
   },
-  description: 'A simple authentication service!',
+  description: 'A simple authentication service with Auth Next v5!',
 };
 
 export default function RootLayout({
